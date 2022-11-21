@@ -1,0 +1,66 @@
+.book-list__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.book-list__item:hover img {
+  box-shadow: 0 3px 6px var(--primary), 0 3px 6px var(--primary);
+}
+
+.book-list__item img {
+  width: 128px;
+  height: 189px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  background: #eee;
+}
+
+.book-list__item span {
+  margin-top: 15px;
+}
+
+.book-list__title {
+  font-weight: bold;
+}
+.book-list__author {
+  color: #999;
+}
+
+/* Favorite badge */
+
+.book-list__heart {
+  position: absolute;
+  right: 3px;
+  top: -10px;
+  padding: 8px 9px;
+  border-radius: 50%;
+  background: lightgray;
+  font-size: 1rem;
+}
+
+.book-list__heart.favorite {
+  color: red;
+}
+
+.book-list__heart:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* Trash badge */
+
+.book-list__trash {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  background: lightgray;
+  font-size: 1rem;
+}
+
+.book-list__trash:hover {
+  color: lightgray;
+  cursor: pointer;
+  background: #000;
+}

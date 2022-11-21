@@ -1,0 +1,48 @@
+.favorite-list__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.favorite-list__item:hover img {
+  box-shadow: 0 3px 6px var(--primary), 0 3px 6px var(--primary);
+}
+
+.favorite-list__item img {
+  width: 128px;
+  height: 189px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  background: #eee;
+}
+
+.favorite-list__item span {
+  margin-top: 15px;
+}
+
+.favorite-list__title {
+  font-weight: bold;
+}
+.favorite-list__author {
+  color: #999;
+}
+
+/* Favorite badge */
+
+.favorite-list__heart {
+  position: absolute;
+  right: 3px;
+  top: -10px;
+  padding: 8px 9px;
+  border-radius: 50%;
+  background: lightgray;
+  font-size: 1rem;
+}
+
+.favorite-list__heart.favorite {
+  color: red
+}
+
+.favorite-list__heart:hover {
+  color: red;
+  cursor: pointer;
+}

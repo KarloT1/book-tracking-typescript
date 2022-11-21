@@ -1,0 +1,155 @@
+.add-book__title {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.add-book__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-book__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.add-book__input-wrapper input {
+  padding: 15px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+.add-book__input-wrapper input:-webkit-autofill,
+.add-book__input-wrapper input:-webkit-autofill:hover, 
+.add-book__input-wrapper input:-webkit-autofill:focus, 
+.add-book__input-wrapper input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.add-book__input-wrapper input:focus {
+  box-shadow: 0 0 3px var(--primary);
+}
+
+.add-book__input-wrapper label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #999;
+  transition: 0.5s ease-in-out;
+  font-size: 1rem;
+}
+
+.add-book__input-wrapper input:focus ~ label {
+  top: -26px;
+}
+
+.add-book__input-wrapper input:not(:placeholder-shown) ~ label {
+  top: -26px;
+}
+
+.add-book__button {
+  padding: 15px 30px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: 25%;
+  margin-left: auto;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+@media(max-width: 767px) {
+  .add-book__button {
+    width: 100%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .add-book__button--isbn {
+    width: 30%;
+  }
+}
+
+@media(max-width: 875px) {
+  .add-book__button--isbn {
+    width: 40%;
+  }
+}
+
+@media(max-width: 767px) {
+  .add-book__button--isbn {
+    width: 100%;
+  }
+}
+
+.add-book__button:hover {
+  color: white;
+  background-color: var(--primary);
+  transition: 0.2s ease-in-out;
+}
+
+.add-book__success {
+  text-align: right;
+  transition: 1s ease-in-out;
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.add-book__error {
+  text-align: right;
+  transition: 1s ease-in-out;
+  color: var(--error);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.add-book__line {
+  margin-bottom: 30px;
+  height: 2px;
+  border: none;
+  width: 100%;
+  background: var(--primary);
+}
+
+/* TOOLTIP */
+.add-book__tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.add-book__tooltip span {
+  opacity: 0;
+  background-color: rgba(65, 179, 163, 0.5);
+  color: rgb(36, 36, 36);
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 20px 6px;
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  right: -70px;
+  transition: 0.5s ease-in-out;
+}
+
+.add-book__tooltip span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border: 5px solid;
+  border-color: rgba(65, 179, 163, 0.5) transparent transparent transparent;
+}
+
+.add-book__tooltip input:focus ~ span {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}

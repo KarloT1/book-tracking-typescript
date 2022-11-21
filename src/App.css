@@ -1,10 +1,10 @@
-/* @import './css/books/bookList.css';
+@import './css/books/bookList.css';
 @import './css/books/bookListItem.css';
 @import './css/favorites/favoriteList.css';
 @import './css/favorites/favoriteListItem.css';
 @import './css/searchField.css';
 @import './css/navbar.css';
-@import './css/addBook/addBook.css'; */
+@import './css/addBook/addBook.css';
 
 .main {
 

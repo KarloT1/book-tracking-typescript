@@ -1,0 +1,22 @@
+.favorite-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.favorite-list li {
+  text-align: left;
+  width: 200px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.no-favorites {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 48px;
+  color: var(--primary);
+  padding: 40px;
+}

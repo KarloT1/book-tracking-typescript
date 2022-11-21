@@ -1,0 +1,17 @@
+.search-field__wrapper {
+  padding: 30px;
+}
+
+.search-field__wrapper input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  outline: none;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+.search-field__wrapper input:focus {
+  box-shadow: 0 0 3px var(--primary);
+}
+
