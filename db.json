@@ -1,0 +1,150 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Ramona the Brave",
+      "author": "Beverly Cleary, Alan Tiegreen",
+      "cover": "https://images.gr-assets.com/books/1408925322m/91248.jpg",
+      "year": 1975,
+      "isFavorite": false
+    },
+    {
+      "id": 2,
+      "title": "Last Breath",
+      "author": "Rachel Caine",
+      "cover": "https://images.gr-assets.com/books/1327900044m/10549501.jpg",
+      "year": 2011,
+      "isFavorite": true
+    },
+    {
+      "id": 3,
+      "title": "The Stainless Steel Rat",
+      "author": "Harry Harrison",
+      "cover": "https://images.gr-assets.com/books/1328073906m/64394.jpg",
+      "year": 1961,
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "author": "Stephen King",
+      "cover": "https://images.gr-assets.com/books/1315100686m/39664.jpg",
+      "year": 1982,
+      "isFavorite": true
+    },
+    {
+      "id": 5,
+      "title": "Shards of Honor",
+      "author": "Lois McMaster Bujold",
+      "cover": "https://images.gr-assets.com/books/1392767899m/61903.jpg",
+      "year": 1986,
+      "isFavorite": false
+    },
+    {
+      "id": 6,
+      "title": "14th Deadly Sin",
+      "author": "James Patterson, Maxine Paetro",
+      "cover": "https://images.gr-assets.com/books/1425682789m/23346918.jpg",
+      "year": 2015,
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "title": "Bread and Jam for Frances",
+      "author": "Russell Hoban, Lillian Hoban",
+      "cover": "https://images.gr-assets.com/books/1384258893m/911579.jpg",
+      "year": 1964,
+      "isFavorite": false
+    },
+    {
+      "id": 8,
+      "title": "The Rum Diary",
+      "author": "Hunter S. Thompson",
+      "cover": "https://images.gr-assets.com/books/1430534762m/18864.jpg",
+      "year": 1998,
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "title": "Blood of Dragons",
+      "author": "Robin Hobb",
+      "cover": "https://images.gr-assets.com/books/1341265576m/13109291.jpg",
+      "year": 2013,
+      "isFavorite": false
+    },
+    {
+      "id": 10,
+      "title": "The Collecto",
+      "author": "John Fowles",
+      "cover": "https://images.gr-assets.com/books/1394828024m/243705.jpg",
+      "year": 1963,
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "title": "Star Wars: The Last Command",
+      "author": "Timothy Zahnd",
+      "cover": "https://images.gr-assets.com/books/1451092026m/216422.jpg",
+      "year": 1993,
+      "isFavorite": false
+    },
+    {
+      "id": 12,
+      "title": "Last Argument of Kings",
+      "author": "Joe Abercrombie",
+      "cover": "https://images.gr-assets.com/books/1302062699m/944076.jpg",
+      "year": 2008,
+      "isFavorite": false
+    },
+    {
+      "id": 13,
+      "title": "Love, Stargirl",
+      "author": "Jerry Spinelli",
+      "cover": "https://images.gr-assets.com/books/1320395760m/846984.jpg",
+      "year": 2007,
+      "isFavorite": false
+    },
+    {
+      "id": 14,
+      "title": "The Portrait of a Lady",
+      "author": "Henry James, Patricia Crick",
+      "cover": "https://images.gr-assets.com/books/1502148606m/264.jpg",
+      "year": 1881,
+      "isFavorite": false
+    },
+    {
+      "id": 15,
+      "title": "One With You",
+      "author": "Sylvia Day",
+      "cover": "https://images.gr-assets.com/books/1458742883m/17876897.jpg",
+      "year": 2016,
+      "isFavorite": false
+    },
+    {
+      "id": 17,
+      "title": "The Shawshank redemption",
+      "author": "Mark Kermode",
+      "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
+      "year": "2003",
+      "isFavorite": false
+    }
+  ],
+  "favorites": [
+    {
+      "id": 2,
+      "title": "Last Breath",
+      "author": "Rachel Caine",
+      "cover": "https://images.gr-assets.com/books/1327900044m/10549501.jpg",
+      "year": 2011,
+      "isFavorite": true
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "author": "Stephen King",
+      "cover": "https://images.gr-assets.com/books/1315100686m/39664.jpg",
+      "year": 1982,
+      "isFavorite": true
+    }
+  ]
+}

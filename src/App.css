@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+/* @import './css/books/bookList.css';
+@import './css/books/bookListItem.css';
+@import './css/favorites/favoriteList.css';
+@import './css/favorites/favoriteListItem.css';
+@import './css/searchField.css';
+@import './css/navbar.css';
+@import './css/addBook/addBook.css'; */
+
+.main {
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main__content {
+  padding: 60px 120px;
+  background-color: #ffffff;
+  background-image:  radial-gradient(var(--primary) 0.45px, transparent 0.45px), radial-gradient(var(--primary) 0.45px, #ffffff 0.45px);
+  background-size: 18px 18px;
+  background-position: 0 0,9px 9px;
 }
