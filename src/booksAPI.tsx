@@ -73,26 +73,16 @@ export const deleteBook = (bookId: number) =>
   })
   .then(res => res.json())
 
-export const searchBookByIsbn = (bookIsbn: string) =>
-  fetch(`${bookByIsbn}/${bookIsbn}.json`, {
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*"
-    }
-  })
+export const searchBookByIsbn = async (bookIsbn: string) =>
+  await fetch(`${bookByIsbn}/${bookIsbn}.json`)
   .then(res => res.json())
 
-export const searchAuthorByIsbn = (authorLink: string) =>
-  fetch(`https://openlibrary.org${authorLink}.json`, {
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*"
-    }
-  })
+export const searchAuthorByIsbn = async (authorLink: string) =>
+  await fetch(`https://openlibrary.org${authorLink}.json`)
   .then(res => res.json())
   
-  export const searchBookCoverByIsbn = (bookIsbn: string) => {
-  fetch(`https://covers.openlibrary.org/b/isbn/${bookIsbn}-S.jpg`, {
+  export const searchBookCoverByIsbn = async (bookIsbn: string) => {
+  await fetch(`https://covers.openlibrary.org/b/isbn/${bookIsbn}-S.jpg`, {
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*"

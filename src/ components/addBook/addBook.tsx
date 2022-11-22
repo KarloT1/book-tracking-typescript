@@ -32,10 +32,24 @@ const AddBook = () => {
           setError(false)
         }, 3000);
       }
+
+      // Reset values
+      setAuthor("")
+      setTitle("")
+      setYear("")
+      setCover("")
     })
   }
 
-  const addByIsbn = (bookData: any): void => {
+  type bookData = {
+    title: string
+    author: string
+    cover: string
+    year: string
+    isFavorite: boolean
+  } 
+
+  const addByIsbn = (bookData: bookData): void => {
     setTitle(bookData.title)
     setAuthor(bookData.author)
     setCover(bookData.cover)

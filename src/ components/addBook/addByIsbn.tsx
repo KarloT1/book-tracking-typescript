@@ -1,9 +1,18 @@
 import { useState } from "react";
 import * as booksAPI from "../../booksAPI";
 
+type bookData = {
+  title: string
+  author: string
+  cover: string
+  year: string
+  isFavorite: boolean
+} 
+
 interface Props {
-  addByIsbn: (args: {}) => void
+  addByIsbn: (bookData: bookData) => void
 }
+
 const AddByIsbn = ({ addByIsbn }: Props) => {
   const [bookIsbn, setBookIsbn] = useState<string>("")
   const [title, setTitle] = useState<string>("")
@@ -12,11 +21,10 @@ const AddByIsbn = ({ addByIsbn }: Props) => {
   const [year, setYear] = useState<string>("")
   const [isFavorite, setIsFavorite ] = useState<boolean>(false)
 
-  const handleSubmit = (): void => {
-    booksAPI.searchBookByIsbn(bookIsbn).then(data => {
-      console.log(data)
+  const handleSubmit = async () => {
+    await booksAPI.searchBookByIsbn(bookIsbn).then(data => {
       if (data.authors) {
-        let authorLink: string = data.authors[0].key;
+        const authorLink: string = data.authors[0].key;
         booksAPI.searchAuthorByIsbn(authorLink).then(authorData => {
           setAuthor(authorData.name)
           setTitle(data.title)
@@ -24,7 +32,7 @@ const AddByIsbn = ({ addByIsbn }: Props) => {
           setCover(`https://covers.openlibrary.org/b/isbn/${bookIsbn}-M.jpg`)
           setIsFavorite(false)
 
-          const bookData = {
+          const bookData: bookData = {
             "title": title,
             "author": author,
             "year": year,
@@ -33,12 +41,19 @@ const AddByIsbn = ({ addByIsbn }: Props) => {
           }
 
           addByIsbn(bookData)
+
+          // // Reset values
+          // setAuthor("")
+          // setTitle("")
+          // setYear("")
+          // setCover("")
+          // setBookIsbn("")
         })
 
       } else {
-        let authorData: string = data.contributions[0]
-        let authorName: string[] = authorData.split(",")
-        let author: string = authorName[1].trim().concat(" ", authorName[0])
+        const authorData: string = data.contributions[0]
+        const authorName: string[] = authorData.split(",")
+        const author: string = authorName[1].trim().concat(" ", authorName[0])
 
         setAuthor(author)
         setTitle(data.title)
@@ -46,7 +61,7 @@ const AddByIsbn = ({ addByIsbn }: Props) => {
         setCover(`https://covers.openlibrary.org/b/isbn/${bookIsbn}-M.jpg`)
         setIsFavorite(false)
 
-        const bookData = {
+        const bookData: bookData = {
           "title": title,
           "author": author,
           "year": year,
@@ -55,12 +70,18 @@ const AddByIsbn = ({ addByIsbn }: Props) => {
         }
 
         addByIsbn(bookData)
+
+        // // Reset values
+        // setAuthor("")
+        // setTitle("")
+        // setYear("")
+        // setCover("")
+        // setBookIsbn("")
       }
     })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    console.log(typeof e.target.value)
     setBookIsbn(e.target.value)
   }
 

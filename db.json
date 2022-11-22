@@ -127,6 +127,14 @@
       "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
       "year": "2003",
       "isFavorite": false
+    },
+    {
+      "title": "Beginning JavaScript with DOM Scripting and Ajax: From Novice to Professional (Beginning: from Novice to Professional)",
+      "author": "Christian Heilmann",
+      "cover": "https://covers.openlibrary.org/b/isbn/9781590596807-M.jpg",
+      "year": "July 14, 2006",
+      "isFavorite": false,
+      "id": 18
     }
   ],
   "favorites": [
