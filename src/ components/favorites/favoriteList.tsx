@@ -22,7 +22,7 @@ const FavoriteList = () => {
 
   const removeFavorite = (bookId: number): void => {
     favorites.forEach((favorite, index) => {
-      let favoriteItems: State[] = [...favorites]
+      const favoriteItems: State[] = [...favorites]
 
       if (favoriteItems[index].id === bookId) {
         favoriteItems.splice(index, 1);
